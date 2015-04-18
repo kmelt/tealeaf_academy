@@ -1,0 +1,33 @@
+GIT COMMANDS
+
+git add
+	> stages changes to get ready for commit
+	> git add [path/to/file]
+	> git add .
+	> git add -u
+
+git commit
+	> packages all staged changes into single "commit"
+	> git commit -m "commit message"
+
+git remote add origin [remote git repo URL]
+	> in order to push/pull to/from "origin" must tell local git repo that alias "origin" refers to [remote git repo URL]
+
+git push origin master
+	> pushes all commits not already on "origin" to "origin" (ie Github repo)
+
+git pull origin master
+	> pulls all commits missing from local from "origin"
+
+git init
+	> turn any dir into git repo
+
+git clone [remote git repo URL]
+	> download code from a remote git repo
+
+git status
+	> shows status of changed code in local git repo, changed and not staged or staged and not committed; won't show commits
+
+git log
+	> lists commits made to repo
+
