@@ -1,0 +1,8 @@
+STRINGS
+
+Double Quote vs. Single Quote w. Escaping
+# Ex. 1
+"The man said, 'Hi there!'"
+# Ex. 2
+'The man said, \'Hi there!\''
+
