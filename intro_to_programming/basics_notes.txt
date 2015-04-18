@@ -6,3 +6,124 @@ Double Quote vs. Single Quote w. Escaping
 # Ex. 2
 'The man said, \'Hi there!\''
 
+Interpolation
+> a = 'ten'
+=> "ten"
+> "My favorite number is #{a}!"
+=> "My favorite number is ten!"
+
+Concatenation
+> 'foo' + 'foo'
+=> "foofoo"
+> 'foo' + 'bar'
+=> "foobar"
+> '1' + '1'
+=> "11"
+
+# cannot add a Fixnum and String together without Type Conversion
+> '4'.to_i
+=> 4
+> '4 hi there'.to_i
+=> 4
+> 'hi there 4'.to_i
+=> 0
+> '4'.to_f
+=> 4.0
+> 4.to_s
+=> "4"
+
+###################################################
+
+NIL
+
+# can be described as having nothing, being completely empty, not any specific type
+
+> puts "Hello, World!"
+Hello, World!
+=> nil
+
+Check If Nil
+> "Hello, World".nil?
+=> false
+
+# when used in an expression (such as if statement), will be treated as false
+
+> if nil
+> puts "Hello, World!"
+> end
+=> nil
+
+> if 1
+> puts "Hello, World!"
+> end
+Hello, World!
+=> nil
+
+> false == nil
+=> false
+
+###################################################
+
+OPERATIONS
+
+> 1 + 1
+=> 2
+
+> 1 - 1
+=> 0
+
+> 4 * 4
+=> 16
+
+> 16 / 4
+=> 4
+
+Modulo (Remainder Operator)
+> 16 % 4
+=> 0
+> 16 % 5
+=> 1
+> 15 % 4
+=> 3
+> 15.0 % 4
+=> 3.75
+
+> 4 == 4
+=> true
+> 4 == 5
+=> false
+> '4' == 4
+=> false
+
+###################################################
+
+DATA STRUCTURES
+
+Arrays
+# organizes info into ordered list made of any data type
+> [1, 2, 3, 4, 5]
+=> [1, 2, 3, 4, 5]
+# indexed starting at zero
+> [1, 2, 3, 4, 5][0]
+=> 1
+
+Hashes
+# "dictionary"; set of key-value pairs
+> {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}
+=> {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}
+> {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}[:cat]
+=> "meows"
+
+###################################################
+
+PUTS VS RETURN
+
+# when calling puts method, Ruby is being told to print something to screen
+# puts does not return what is printed to screen
+# expressions do something, but also return something; value returned is not necessarily the action that was performed
+
+> puts 'stuff'
+stuff
+=> nil
+
+# puts in this case prints stuff to screen, and returns nil
